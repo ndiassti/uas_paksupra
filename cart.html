@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+</head>
+<body>
+    <h1>Keranjang Belanja</h1>
+    <form action="{{ url_for('checkout') }}" method="POST">
+        <ul>
+            {% for item in cart_items %}
+            <li>
+                {{ item[1] }} - {{ item[2] }} x ${{ item[3] }}
+                <button type="submit">Checkout</button>
+            </li>
+            {% endfor %}
+        </ul>
+    </form>
+    <a href="{{ url_for('index') }}">Kembali ke Produk</a>
+</body>
+</html>

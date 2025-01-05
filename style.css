@@ -1,0 +1,26 @@
+<!-- CSS tambahan untuk Keranjang --><style>.btn-add-to-keranjang {
+    background-color: pink;
+    color: white;
+    border-radius: 12px;
+    /* Membuat tombol lebih bulat */
+    padding: 8px 16px;
+    /* Menambah padding agar seperti kotak */
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    /* Ukuran teks */
+    transition: background-color 0.3s ease;
+    /* Transisi halus saat hover */
+}
+
+.btn-add-to-keranjang:hover {
+    background-color: #e60073;
+    /* Warna pink gelap saat hover */
+}
+
+.fas.fa-shopping-cart {
+    margin-right: 8px;
+    /* Menambah jarak antara ikon dan teks */
+}
+
+</style>
